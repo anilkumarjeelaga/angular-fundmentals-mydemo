@@ -1,0 +1,9 @@
+<h4>My hero name is {{ title }}</h4>
+<h4>my fav hero is {{ myHero }}</h4>
+<b>Heros Names</b>
+<ul>
+    <li *ngFor = "let hero of Heros">
+        {{hero}}
+    </li>
+</ul>
+<p *ngIf = "Heros.length > 3">They are Many heroes</p>
