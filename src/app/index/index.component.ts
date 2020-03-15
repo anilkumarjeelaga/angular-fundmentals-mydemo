@@ -12,4 +12,6 @@ export class IndexComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  images = ['assets/images/image-1.jpg', 'assets/images/image-2.jpg','assets/images/image-3.jpg'];
 }
