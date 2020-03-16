@@ -3,10 +3,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { DisplayDataInTemplateComponent } from './components-templates/display-data-in-template/display-data-in-template.component';
 import { DisplayDataInUrlTemplateComponent } from './components-templates/display-data-in-url-template/display-data-in-url-template.component';
+import { TemplateSyntaxComponent } from './components-templates/template-syntax/template-syntax.component';
+import { HeroDetailComponent } from './components-templates/hero-detail/hero-detail.component';
+
 const routes: Routes = [
 {path: 'index', component:IndexComponent},
 {path: 'components-templates/display-data-in-template', component:DisplayDataInTemplateComponent},
 {path: 'components-templates/display-data-in-url-template', component:DisplayDataInUrlTemplateComponent },
+{path: 'components-templates/template-syntax', component:TemplateSyntaxComponent},
+{path: 'components-templates/hero-detail', component:HeroDetailComponent},
 {path: '', redirectTo:'index', pathMatch:'full'}
 ];
 
