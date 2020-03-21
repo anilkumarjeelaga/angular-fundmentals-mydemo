@@ -106,3 +106,111 @@
 <br>
 <hr>
 <h6><b>Event Binding</b></h6>
+<button (click) = "onSave($event)">save</button><br><br>
+<button on-clcik = "onSave($event)">save</button>
+<br>
+<br>
+<input type="text" keypress ="onSave($event)"/>
+<br>
+<hr>
+<h6><b>Template Expression Operators</b></h6>
+<br>
+<h6>pipe operator</h6>
+<div>Hero name: {{ currentHero.name | uppercase}}</div>
+<div><pre>{{ currentHero | json}}</pre></div>
+
+<!-- <h6>Pipe Operator:</h6>
+<div>Hero name: {{currentHero.name | uppercase}}</div>
+<div><pre>{{currentHero | json}}</pre></div> -->
+<br>
+<h6><b>Safe Navigation operator</b></h6>
+<div>The null heros name is {{ nullHero?.name }}</div>
+<hr>
+<br>
+<h6><b>Template Statements</b></h6>
+<div>Hero name {{ currentHero.name }}</div>
+<div><button (click) = 'currentHero.name = "david"'>Save</button></div><br>
+<br>
+<div>We can chain the template statements</div>
+<div><button (click) = "currentHero.name = 'david';onSave($event)">Save</button></div>
+<br>
+<hr>
+
+<h6><b>Template Reference variables( #hero )</b></h6>
+
+<!-- <form (ngSubmit)="onSubmit(heroForm)" ngForm #heroForm="ngForm" id="hero-Form" > -->
+  <!-- <div class="form-group">
+    <label for="name">phone :{{ phoneRef.value }}
+      <input class="form-control" id="phone" name="phone" #phoneRef [(ngModel)]="phone">
+    </label>
+  </div> -->
+
+  
+  <!-- <div class="form-group">
+    <label for="name">Name value: {{ name.value }}
+      <input class="form-control" name="name" [(ngModel)]="currentHero.name" #name = "ngModel" required minlength="4">
+    </label>
+    <div><pre>{{ name.errors | json}}</pre></div>
+    <div *ngIf = "name.invalid">
+      <div *ngIf="name.errors.required">
+        Name is required
+      </div>
+      <div *ngIf="name.errors.minlength">
+         Name should be more than 4 chars
+      </div>
+    </div>
+
+  </div>
+  <button type="submit" [disabled]="!heroForm.form.valid">submit</button> -->
+<!-- </form> -->
+
+<!-- <form (ngSubmit)="onSubmit(heroForm)" ngForm #heroForm="ngForm" id="hero-form">
+  <div class="form-group">
+    <label for="name">Phone: {{ phoneRef.value }}
+      <input class="form-control" id="phone" name="phone" #phoneRef [(ngModel)]="phone">
+    </label>
+  </div>
+  <div class="form-group">
+    <label for="name">Name value: {{ name.value }}
+      <input class="form-control" name="name" [(ngModel)]="currentHero.name" #name="ngModel" required minlength="4" >
+    </label>
+
+    <div><pre>{{ name.errors | json }}</pre></div>
+
+    <div *ngIf="name.invalid">
+      <div *ngIf="name.errors.required">
+        Name is required
+      </div> 
+      <div *ngIf="name.errors.minlength">
+        Name should be morethan 4 chars
+      </div>     
+    </div>
+  </div>
+  <button type="submit" [disabled]="!heroForm.form.valid">Submit</button>
+</form> -->
+
+
+<!-- <form (ngSubmit)="onSubmit(heroForm)" ngForm #heroForm="ngForm" id="hero-form">
+  <div class="form-group">
+    <label for="name">Phone: {{ phoneRef.value }}
+      <input class="form-control" id="phone" name="phone" #phoneRef [(ngModel)]="phone">
+    </label>
+  </div>
+  <div class="form-group">
+    <label for="name">Name: {{ name.value }}
+      <input class="form-control" name="name" [(ngModel)]="currentHero.name" #name="ngModel" required minlength="4" >
+    </label>
+
+    <div><pre>{{ name.errors | json }}</pre></div>
+
+    <div *ngIf="name.invalid">
+      <div *ngIf="name.errors.required">
+        Name is required
+      </div> 
+      <div *ngIf="name.errors.minlength">
+        Name should be morethan 4 chars
+      </div>     
+    </div>
+  </div>
+  <button type="submit" [disabled]="!heroForm.form.valid">Submit</button>
+</form> -->

@@ -62,10 +62,12 @@ export class TemplateSyntaxComponent implements OnInit {
     return this.heroImageUrl;
   }
 
-  onSave(event) {
-    console.log(event);
-  }
-
+  // onSave(event) {
+  //   console.log(event);
+  // }
+onSave(event) {
+  console.log(event);
+}
   onSubmit(heroForm) {
     console.log(heroForm);
   }
