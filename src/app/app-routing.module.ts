@@ -9,6 +9,7 @@ import { CustomEventsComponent } from './components-templates/custom-events/cust
 import { DisplayHeroComponent } from './components-templates/display-hero/display-hero.component';
 import { HeroBioComponent } from './components-templates/hero-bio/hero-bio.component';
 import { TwoWayBindingComponent } from './components-templates/two-way-binding/two-way-binding.component';
+import { DirectivesComponent } from './components-templates/directives/directives.component';
 const routes: Routes = [
 {path: 'index', component:IndexComponent},
 {path: 'components-templates/display-data-in-template', component:DisplayDataInTemplateComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
 { path: 'components-templates/template-syntax/hero-bio', component:HeroBioComponent },
 {path: 'components-templates/display-hero', component:DisplayHeroComponent},
 {path: 'components-templates/template-syntax/two-way-binding', component:TwoWayBindingComponent},
+{path: 'components-templates/directives', component:DirectivesComponent},
 {path: '', redirectTo:'index', pathMatch:'full'}
 ];
 
