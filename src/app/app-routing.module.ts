@@ -10,6 +10,10 @@ import { DisplayHeroComponent } from './components-templates/display-hero/displa
 import { HeroBioComponent } from './components-templates/hero-bio/hero-bio.component';
 import { TwoWayBindingComponent } from './components-templates/two-way-binding/two-way-binding.component';
 import { DirectivesComponent } from './components-templates/directives/directives.component';
+// import { InteractionComponent } from './components-templates/interaction/interaction.component';
+import { InteractionComponent } from './components-templates/interaction/interaction.component';
+
+
 const routes: Routes = [
 {path: 'index', component:IndexComponent},
 {path: 'components-templates/display-data-in-template', component:DisplayDataInTemplateComponent},
@@ -21,6 +25,9 @@ const routes: Routes = [
 {path: 'components-templates/display-hero', component:DisplayHeroComponent},
 {path: 'components-templates/template-syntax/two-way-binding', component:TwoWayBindingComponent},
 {path: 'components-templates/directives', component:DirectivesComponent},
+// {path: 'components-templates/component-interaction', component:InteractionComponent},
+{ path: 'components-templates/component-interaction', component:  InteractionComponent },
+
 {path: '', redirectTo:'index', pathMatch:'full'}
 ];
 

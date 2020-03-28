@@ -11,6 +11,8 @@ import { ComponentsTemplatesModule } from './components-templates/components-tem
   declarations: [
     AppComponent,
     IndexComponent
+    
+    
   ],
   imports: [
     BrowserModule,
