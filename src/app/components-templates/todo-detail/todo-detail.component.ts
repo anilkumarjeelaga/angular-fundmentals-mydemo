@@ -14,8 +14,12 @@ export class TodoDetailComponent implements OnInit {
   ngOnInit() {
   }
 
-  @Input() todo;
-
+  // @Input() todo;
+   @Input() todo;
+  // toggle() {
+  //   this.todo.done = !this.todo.done;
+  //   this.tracker.track(this.todo);
+  // }
   toggle() {
     this.todo.done = !this.todo.done;
     this.tracker.track(this.todo);

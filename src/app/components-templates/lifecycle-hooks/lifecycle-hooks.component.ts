@@ -1,0 +1,32 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-lifecycle-hooks',
+  templateUrl: './lifecycle-hooks.component.html',
+  styleUrls: ['./lifecycle-hooks.component.css']
+})
+export class LifecycleHooksComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+  created = false;
+
+   user = {
+     name:"John",
+     age:25
+   }
+   otherUser = {
+     name:'Michael',
+     age:30
+   }
+   currentUser = this.user
+
+   changecurrentUser() {
+     this.currentUser = this.otherUser
+   }
+   changecurrentUserName(){
+     this.currentUser.name = 'Joseph';
+   }
+}
