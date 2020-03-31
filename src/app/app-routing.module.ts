@@ -15,6 +15,8 @@ import { LifecycleHooksComponent } from './components-templates/lifecycle-hooks/
 import { LifecycleViewHooksComponent } from './components-templates/lifecycle-view-hooks/lifecycle-view-hooks.component';
 import { LifecycleContentHooksComponent } from './components-templates/lifecycle-content-hooks/lifecycle-content-hooks.component';
 import { PipesComponent } from './components-templates/pipes/pipes/pipes.component';
+import { ObservablesDemoComponent } from './rx-demo/observables-demo/observables-demo.component';
+
 
 const routes: Routes = [
 {path: 'index', component:IndexComponent},
@@ -31,6 +33,7 @@ const routes: Routes = [
 {path: 'components-templates/lifecycle-hooks/view-hooks', component:  LifecycleViewHooksComponent },
 {path: 'components-templates/lifecycle-hooks/content-hooks', component: LifecycleContentHooksComponent},
 {path: 'components-templates/pipes', component:PipesComponent},
+{path: 'rxjs-demo/observables-demo', component:ObservablesDemoComponent},
 {path: '', redirectTo:'index', pathMatch:'full'}
 ];
 

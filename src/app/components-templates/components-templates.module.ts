@@ -38,13 +38,14 @@ import { ExponentialStrengthPipe } from './pipes/pipes/exponential-strength.pipe
 import { FormatNamePipe } from './pipes/pipes/format-name.pipe';
 import { FlyingHerosPurePipe } from './pipes/pipes/flying-heros-pure.pipe';
 import { FlyingHerosImpurePipe } from './pipes/pipes/flying-heros-impure.pipe';
+import { TestComponent } from './pipes/test/test.component';
 // import { PipesComponent } from './pipes/pipes.component';
 
 //{ RouterModule} from '@angular/router'
 
 
 @NgModule({
-  declarations: [DisplayDataInTemplateComponent, DisplayDataInUrlTemplateComponent, TemplateSyntaxComponent, HeroDetailComponent, CustomEventsComponent, DisplayHeroComponent, HeroBioComponent, TwoWayBindingComponent, HighlightDirective, DirectivesComponent, HighlightV1Directive, HighlightV2Directive, HighlightV3Directive, ReverseIfDirective, InteractionComponent, CountdowmParentWithTempRefVarComponent, CountdownTimerComponent, CountdownParentWithViewChildComponent, UserDetailComponent, EditUserComponent, SimpleTodoComponent, TodoDetailComponent, LifecycleHooksComponent, UserCycleComponent, LifecycleViewHooksComponent, LifecycleContentHooksComponent, UserAfterViewDetailComponent, UserAfterContentDetailComponent, PipesComponent, ExponentialStrengthPipe, FormatNamePipe, FlyingHerosPurePipe, FlyingHerosImpurePipe],
+  declarations: [DisplayDataInTemplateComponent, DisplayDataInUrlTemplateComponent, TemplateSyntaxComponent, HeroDetailComponent, CustomEventsComponent, DisplayHeroComponent, HeroBioComponent, TwoWayBindingComponent, HighlightDirective, DirectivesComponent, HighlightV1Directive, HighlightV2Directive, HighlightV3Directive, ReverseIfDirective, InteractionComponent, CountdowmParentWithTempRefVarComponent, CountdownTimerComponent, CountdownParentWithViewChildComponent, UserDetailComponent, EditUserComponent, SimpleTodoComponent, TodoDetailComponent, LifecycleHooksComponent, UserCycleComponent, LifecycleViewHooksComponent, LifecycleContentHooksComponent, UserAfterViewDetailComponent, UserAfterContentDetailComponent, PipesComponent, ExponentialStrengthPipe, FormatNamePipe, FlyingHerosPurePipe, FlyingHerosImpurePipe, TestComponent],
   imports: [
     CommonModule,
     HttpClientModule,

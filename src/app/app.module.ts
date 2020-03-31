@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { ComponentsTemplatesModule } from './components-templates/components-templates.module';
-// import { ExponentialStrengthPipe } from './exponential-strength.pipe';
+import { RxDemoModule } from './rx-demo/rx-demo.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import { ComponentsTemplatesModule } from './components-templates/components-tem
     AppRoutingModule,
     ComponentsTemplatesModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    RxDemoModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

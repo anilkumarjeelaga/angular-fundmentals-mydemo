@@ -1,0 +1,12 @@
+#special-area{
+    width:100%;
+    height: 140px;
+    background: #ccc;
+    border:solid darkblue;
+}
+
+ul.logs {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 10px;
+}

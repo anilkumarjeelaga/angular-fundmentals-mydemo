@@ -10,7 +10,8 @@
 </pre>
 
 <br>
-<div>2 power 10 is {{2 | exponentialStrength : 10}}</div>
+<div>2 power 10 is {{ 2 | exponentialStrength: '10'  }}</div>
+<!-- <div>2 power 10 is {{ 2 | exponentialStrength : 10 }}</div> -->
 <div>The preferred name of {{name}} is {{name | formatName: 'middle' : 'last'}}</div>
 <div>The preferred name of {{name}} is {{name | formatName: 'first' : 'last'}}</div>
 <div>The preferred name of {{name}} is {{name | formatName: 'first' : 'middle'}}</div>

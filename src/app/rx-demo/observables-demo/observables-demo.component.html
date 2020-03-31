@@ -1,0 +1,57 @@
+<!-- <p>observables-demo works!</p> -->
+<h6><b>Observables Creation</b></h6>
+
+<br>
+<h6>From Event</h6>
+<div id="special-area"></div>
+<ul class="logs">
+    <li *ngFor = "let log of fromEventLogs">{{log}}</li>
+</ul>
+<br>
+<h6>Ajax</h6>
+<ul class="logs">
+    <li *ngFor="let log of ajaxLogs">{{ log }}</li>
+</ul>
+<br>
+
+
+<h6>interval</h6>
+<ul class="logs">
+    <li *ngFor="let log of intervalLogs">{{ log }}</li>
+</ul>
+<br>
+
+<h6>fromArray</h6>
+<ul class="logs">
+    <li *ngFor = "let log of fromLogs">{{ log }}</li>
+</ul>
+<br>
+
+<h6>ofMethod</h6>
+<ul class="logs">
+    <li *ngFor = "let log of ofLogs">{{ log }}</li>
+</ul>
+<br>
+
+<h6>Observables.create</h6>
+<ul class="logs">
+    <li *ngFor="let log of customObservableLogs">{{ log }}</li>
+</ul>
+<br>
+
+<h6>new Observable</h6>
+<ul class="logs">
+    <li *ngFor ="let log of customObservable2Logs">{{ log }}</li>
+</ul>
+<br>
+
+<h6>Custom observalble with error method</h6>
+<ul class="logs">
+    <li *ngFor = "let log of customObservable3Logs">{{ log }}</li>
+</ul>
+<br>
+
+<h6>Custom observable on array</h6>
+<ul>
+    <li *ngFor="let log of arrayCustomObservableLogs">{{ log }}</li>
+</ul>
