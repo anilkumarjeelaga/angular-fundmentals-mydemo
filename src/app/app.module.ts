@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { ComponentsTemplatesModule } from './components-templates/components-templates.module';
+// import { ExponentialStrengthPipe } from './exponential-strength.pipe';
 
 @NgModule({
   declarations: [

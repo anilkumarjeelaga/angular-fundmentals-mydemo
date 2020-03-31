@@ -32,17 +32,25 @@ import { LifecycleViewHooksComponent } from './lifecycle-view-hooks/lifecycle-vi
 import { LifecycleContentHooksComponent } from './lifecycle-content-hooks/lifecycle-content-hooks.component';
 import { UserAfterViewDetailComponent } from './user-after-view-detail/user-after-view-detail.component';
 import { UserAfterContentDetailComponent } from './user-after-content-detail/user-after-content-detail.component';
+// import { TestComponent } from './pipes/pipes/test/test.component';
+import { PipesComponent } from './pipes/pipes/pipes.component';
+import { ExponentialStrengthPipe } from './pipes/pipes/exponential-strength.pipe';
+import { FormatNamePipe } from './pipes/pipes/format-name.pipe';
+import { FlyingHerosPurePipe } from './pipes/pipes/flying-heros-pure.pipe';
+import { FlyingHerosImpurePipe } from './pipes/pipes/flying-heros-impure.pipe';
+// import { PipesComponent } from './pipes/pipes.component';
 
 //{ RouterModule} from '@angular/router'
 
 
 @NgModule({
-  declarations: [DisplayDataInTemplateComponent, DisplayDataInUrlTemplateComponent, TemplateSyntaxComponent, HeroDetailComponent, CustomEventsComponent, DisplayHeroComponent, HeroBioComponent, TwoWayBindingComponent, HighlightDirective, DirectivesComponent, HighlightV1Directive, HighlightV2Directive, HighlightV3Directive, ReverseIfDirective, InteractionComponent, CountdowmParentWithTempRefVarComponent, CountdownTimerComponent, CountdownParentWithViewChildComponent, UserDetailComponent, EditUserComponent, SimpleTodoComponent, TodoDetailComponent, LifecycleHooksComponent, UserCycleComponent, LifecycleViewHooksComponent, LifecycleContentHooksComponent, UserAfterViewDetailComponent, UserAfterContentDetailComponent],
+  declarations: [DisplayDataInTemplateComponent, DisplayDataInUrlTemplateComponent, TemplateSyntaxComponent, HeroDetailComponent, CustomEventsComponent, DisplayHeroComponent, HeroBioComponent, TwoWayBindingComponent, HighlightDirective, DirectivesComponent, HighlightV1Directive, HighlightV2Directive, HighlightV3Directive, ReverseIfDirective, InteractionComponent, CountdowmParentWithTempRefVarComponent, CountdownTimerComponent, CountdownParentWithViewChildComponent, UserDetailComponent, EditUserComponent, SimpleTodoComponent, TodoDetailComponent, LifecycleHooksComponent, UserCycleComponent, LifecycleViewHooksComponent, LifecycleContentHooksComponent, UserAfterViewDetailComponent, UserAfterContentDetailComponent, PipesComponent, ExponentialStrengthPipe, FormatNamePipe, FlyingHerosPurePipe, FlyingHerosImpurePipe],
   imports: [
     CommonModule,
     HttpClientModule,
     FormsModule,
     RouterModule
+    
   ]
 })
 export class ComponentsTemplatesModule { }

@@ -1,0 +1,53 @@
+<h6><b>Pipes</b></h6>
+<div>Birth day</div>
+<div>Without pipe: {{ birthday }}</div>
+<div>With pipe: {{ birthday | date }}</div>
+<div>With pipe and parameter: {{ birthday | date:'MM/dd/yy' }}</div>
+<div>With pipe chaining: {{ birthday | date | uppercase }}</div>
+<div>json pipe:</div>
+<pre>
+{{ heros | json }}
+</pre>
+
+<br>
+<div>2 power 10 is {{2 | exponentialStrength : 10}}</div>
+<div>The preferred name of {{name}} is {{name | formatName: 'middle' : 'last'}}</div>
+<div>The preferred name of {{name}} is {{name | formatName: 'first' : 'last'}}</div>
+<div>The preferred name of {{name}} is {{name | formatName: 'first' : 'middle'}}</div>
+
+<br>
+<h6><b>Pure Pipes</b></h6>
+<div>Heroes without pipe(All Heroes)</div>
+<ul>
+    <li *ngFor = "let hero of heros">{{hero.name}}</li>
+</ul>
+
+<br>
+<div>Pure pipes can't detech change in object property change / Array element change</div>
+<div>pure pipes can only detech the variables / object / Array reference change</div>
+
+<div style="margin:10px 0px;">
+  <label>Add hero by Pushing Object:</label> &nbsp;&nbsp;
+    <input type="text" [(ngModel)]="newHero.name" #heroName (keyup.enter)="pushHero(heroName.value, can.value)" placeholder="Type name and hit enter" /> &nbsp; &nbsp;
+    <input type="checkbox" [(ngModel)]="newHero.canFly" #can /> Can Fly
+</div>
+
+<br>
+<div style="margin: 10px 0px;">
+    <label>Add hero by reference change:</label> &nbsp;&nbsp; 
+    <input type="text" [(ngModel)]="newHero.name" #heroName2 (keyup.enter)="concatHero(heroName2.value, can2.value)" placeholder="Type name and hit enter" /> &nbsp;&nbsp;
+    <input type="checkbox" [(ngModel)]="newHero.canFly" #can2 /> Can Fly
+  </div>
+  <br>
+
+<div><b>Heroes with flyingHeroesPure pipe</b></div>
+<ul>
+  <li *ngFor="let hero of (heros | flyingHerosPure)">{{ hero.name }}</li>
+</ul>
+
+<br>
+<div><b>Heroes with flyingHeroesImpure pipe</b></div>
+<div>Impure pipe can respond for any kind of change(Mutation of object properties / Reference change)</div>
+<ul>
+  <li *ngFor="let hero of (heros | flyingHerosImpure)">{{ hero.name }}</li>
+</ul>

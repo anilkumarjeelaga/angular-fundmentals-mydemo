@@ -14,6 +14,7 @@ import { InteractionComponent } from './components-templates/interaction/interac
 import { LifecycleHooksComponent } from './components-templates/lifecycle-hooks/lifecycle-hooks.component';
 import { LifecycleViewHooksComponent } from './components-templates/lifecycle-view-hooks/lifecycle-view-hooks.component';
 import { LifecycleContentHooksComponent } from './components-templates/lifecycle-content-hooks/lifecycle-content-hooks.component';
+import { PipesComponent } from './components-templates/pipes/pipes/pipes.component';
 
 const routes: Routes = [
 {path: 'index', component:IndexComponent},
@@ -29,6 +30,7 @@ const routes: Routes = [
 {path:'components-templates/lifecycle-hooks', component:LifecycleHooksComponent},
 {path: 'components-templates/lifecycle-hooks/view-hooks', component:  LifecycleViewHooksComponent },
 {path: 'components-templates/lifecycle-hooks/content-hooks', component: LifecycleContentHooksComponent},
+{path: 'components-templates/pipes', component:PipesComponent},
 {path: '', redirectTo:'index', pathMatch:'full'}
 ];
 
