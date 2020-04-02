@@ -1,0 +1,96 @@
+<p>different-operators works!</p>
+<div>different-operators</div>
+<h6><b>1. Map</b></h6>
+<ul class="logs">
+    <li *ngFor = "let log of numbersMappedLogs">{{log}}</li>
+</ul>
+<br>
+
+
+
+<h6><b>2. Filter</b></h6>
+<ul class="logs">
+    <li *ngFor ="let log of filterLogs">{{ log }}</li>
+</ul>
+<br>
+
+
+
+<h6><b>3. Combine Latest</b></h6>
+<ul class="logs">
+    <li *ngFor = "let log of combineLatestLogs">{{ log }}</li>
+</ul>
+<br>
+
+
+<h6><b>4. Merge</b></h6>
+<ul class="logs">
+    <li *ngFor = "let log of mergeLogs">{{ log }}</li>
+</ul>
+<br>
+
+
+<h6><b>5. Concat</b></h6>
+<ul class="logs">
+    <li *ngFor = "let log of concatLogs">{{ log }}</li>
+</ul>
+<br>
+
+<h6><b>6. StartWith</b></h6>
+<ul class="logs">
+    <li *ngFor = "let log of startWithLogs">{{ log }}</li>
+</ul>
+<br>
+
+
+
+<h6><b>7. withLatestFrom</b></h6>
+<ul class="logs">
+    <li *ngFor = "let log of withLatestLogs">{{ log }}</li>
+</ul>
+<br>
+
+<h6><b>8. Zip</b></h6>
+<ul class="logs">
+    <li *ngFor = "let log of zipLogs">{{ log | json}}</li>
+</ul>
+<br>
+
+
+<h6><b>9. debounce</b></h6>
+<input type="text" value="" id="name">
+<ul class="logs">
+    <li *ngFor = "let log of debounceTimeLogs">{{ log }}</li>
+</ul>
+<br>
+
+<h6><b>10. distinct & distinctUntilChanged</b></h6>
+<ul class="logs">
+    <li *ngFor = "let log of distinctLogs">{{ log }}</li>
+</ul>
+<ul class="logs">
+    <li *ngFor = "let log of distinctUntilChanged">{{ log }}</li>
+</ul>
+<br>
+
+
+<h6><b>11. Take</b></h6>
+<ul class="logs">
+    <li *ngFor = "let log of takeLogs">{{ log }}</li>
+</ul>
+<br>
+
+<h6><b>12. TakeUntil</b></h6>
+<ul class="logs">
+    <li *ngFor = "let log of takeUntilLogs">{{ log }}</li>
+</ul>
+<br>
+
+<h6><b>13. bufferTime</b></h6>
+<ul class="logs">
+  <li *ngFor="let log of bufferTimeLogs">{{ log | json}}</li>
+</ul>
+<!-- <h6><b>13. BufferTime</b></h6>
+<ul class="logs">
+    <li *ngFor = "let log of bufferTimeLogs">{{ log | json}}</li>
+</ul> -->
