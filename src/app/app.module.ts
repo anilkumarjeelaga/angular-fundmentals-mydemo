@@ -7,12 +7,12 @@ import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { ComponentsTemplatesModule } from './components-templates/components-templates.module';
 import { RxDemoModule } from './rx-demo/rx-demo.module';
+import { ModulesDemoModule } from './modules-demo/modules-demo.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent
-    
+    IndexComponent    
     
   ],
   imports: [
@@ -21,6 +21,7 @@ import { RxDemoModule } from './rx-demo/rx-demo.module';
     ComponentsTemplatesModule,
     NgbModule,
     FormsModule,
+    ModulesDemoModule,
     RxDemoModule    
   ],
   providers: [],
