@@ -8,6 +8,7 @@ import { IndexComponent } from './index/index.component';
 import { ComponentsTemplatesModule } from './components-templates/components-templates.module';
 import { RxDemoModule } from './rx-demo/rx-demo.module';
 import { ModulesDemoModule } from './modules-demo/modules-demo.module';
+// import { CounterOneModule } from './counter-one/counter-one.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ModulesDemoModule } from './modules-demo/modules-demo.module';
     NgbModule,
     FormsModule,
     ModulesDemoModule,
-    RxDemoModule    
+    RxDemoModule
+    // CounterOneModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
