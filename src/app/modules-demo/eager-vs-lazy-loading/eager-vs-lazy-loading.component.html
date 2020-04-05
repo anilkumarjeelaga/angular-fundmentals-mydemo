@@ -1,1 +1,13 @@
-<p>eager-vs-lazy-loading works!</p>
+<h6>Eager Loading Vs Lazy Loading / Singleton Services</h6>
+
+<a [routerLink]="['counter-one-home']"> Counter One Home</a><br><br>
+                    <!--[ or ] -->
+<!-- <a [routerLink]="['./counter-one-home']"> Counter One Home</a><br> -->
+<a [routerLink] = "['counter-two-home']">Counter Two Home</a><br><br>
+                    <!--[ or ] -->
+<!-- <a [routerLink]="['./counter-two-home']"> Counter two Home</a><br> -->
+
+<a [routerLink] = "['/lazy-loading-home']">Lazy Loading Home</a><br><br>
+                     <!--[ or ] -->
+<!-- <a [routerLink]="['../../lazy-loading-home']">Lazy Counter Home</a> -->
+
