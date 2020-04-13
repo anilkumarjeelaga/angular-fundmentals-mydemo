@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UtilService } from 'src/app/core/util.service';
 
 @Component({
   selector: 'app-counter-home',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CounterHomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private util: UtilService ) { }
 
-  ngOnInit(): void {
+  userName: string;
+
+  ngOnInit() {
+    this.util.userName$.subscribe(val => this.userName = val);
   }
 
 }

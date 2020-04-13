@@ -5,6 +5,13 @@
 <app-increase-count></app-increase-count>
 <br>
 <br>
+<br><br><br>
+<h6>Core Module - UtilService Demo</h6>
+<div>User name is {{ userName }}</div>
+<div>
+    <input type="text" [(ngModel)]="userName" (keyup)="updateUserName()" />
+</div>
+
 <a class="btn btn-outline-primary" [routerLink] = "['/ngmodules/eager-vs-lazy-loading']">&lt;&lt;Back to Eager Loading Vs lazing Loading</a>
                       <!-- or -->
 <!-- <a class="btn btn-outline-primary" [routerLink]="['../']">&lt;&lt; Back to Eager Loading Vs Lazy Loading</a> -->

@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { DisplayDataInTemplateComponent } from './components-templates/display-data-in-template/display-data-in-template.component';
-// import { DisplayDataInUrlTemplateComponent } from './components-templates/display-data-in-url-template/display-data-in-url-template.component';
 import { TemplateSyntaxComponent } from './components-templates/template-syntax/template-syntax.component';
 import { HeroDetailComponent } from './components-templates/hero-detail/hero-detail.component';
 import { CustomEventsComponent } from './components-templates/custom-events/custom-events.component';
@@ -23,7 +22,15 @@ import {LazyLoadingDemoComponent  } from './modules-demo/lazy-loading-demo/lazy-
 import { EagerVsLazyLoadingComponent } from './modules-demo/eager-vs-lazy-loading/eager-vs-lazy-loading.component';
 import { CounterHomeComponent as CounterOneHomeComponent } from './counter-one/counter-home/counter-home.component';
 import { CounterHomeComponent as counterTwoHomeComponent } from './counter-two/counter-home/counter-home.component';
-
+import { FormControlComponent } from './forms-demo/reactive/form-control/form-control.component';
+import { FormGroupComponent } from './forms-demo/reactive/form-group/form-group.component';
+import { NestedFormGroupComponent } from './forms-demo/reactive/nested-form-group/nested-form-group.component';
+import { FormBuilderComponent } from './forms-demo/reactive/form-builder/form-builder.component';
+import { FormArrayComponent } from './forms-demo/reactive/form-array/form-array.component';
+import { SuperHeroComponent } from './forms-demo/template-driven/super-hero/super-hero.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
+import { ReactiveFormValidationComponent } from './forms-demo/reactive/reactive-form-validation/reactive-form-validation.component';
+import { TemplateDrivenFormValidationComponent } from './forms-demo/template-driven/template-driven-form-validation/template-driven-form-validation.component';
 
 
 const routes: Routes = [
@@ -71,7 +78,19 @@ const routes: Routes = [
 // { path: 'lazy-counter-home', loadChildren: './counter-lazy/counter-lazy.module#CounterLazyModule' },
 
 
-{ path: '', redirectTo:'index',  pathMatch:'full'}
+ /* Form demo routes */  
+{ path:'forms/reactive/form-control', component:FormControlComponent },
+{ path:'forms/reactive/form-group', component:FormGroupComponent },
+{ path:'forms/reactive/nested-form-group', component:NestedFormGroupComponent },
+{ path:'forms/reactive/form-builder', component:FormBuilderComponent },
+{ path:'forms/reactive/form-array', component:FormArrayComponent},
+{ path:'forms/template-driven', component:SuperHeroComponent },
+{ path:'forms/validation/reactive', component:ReactiveFormValidationComponent },
+{ path: 'forms/validation/template-driven', component: TemplateDrivenFormValidationComponent },
+
+ /* Default path and wild match routes */  
+{ path: '', redirectTo:'index',  pathMatch:'full'},
+{ path:'**', component:PageNotFoundComponent  }
 ];
 
 @NgModule({
